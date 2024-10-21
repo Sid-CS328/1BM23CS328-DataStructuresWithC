@@ -32,7 +32,7 @@ int isEmpty(CircularQueue *q){
 
 void enqueue(CircularQueue *q, int value){
     if(isFull(q)){
-        printf("Queue Overflow! \n");
+        printf("Queue is Full! \n");
         return;
     }
 
@@ -49,7 +49,7 @@ void enqueue(CircularQueue *q, int value){
 
 void dequeue(CircularQueue *q){
     if(isEmpty(q)){
-        printf("Queue Underflow! \n");
+        printf("Queue is Empty! \n");
         return;
     }
 
