@@ -70,7 +70,7 @@ int main(){
     struct Node *head = NULL;
     struct Node *temp = head;
 
-    int choice, value;
+    int choice, value_data;
 
 
     do{
@@ -86,15 +86,19 @@ int main(){
 
         switch(choice){
             case 1:
+                //printf("%d \n", value_data);
                 printf("Enter Value to insert:");
-                scanf("&d", &value);
-                insertBeginning(&head, value);
+                scanf("&d", &value_data);
+
+                //printf("%d \n", value_data);
+
+                insertBeginning(&head, value_data);
                 break;
 
             case 2:
                 printf("Enter Value to insert:");
-                scanf("&d", &value);
-                insertEnd(&head, value);
+                scanf("&d", &value_data);
+                insertEnd(&head, value_data);
                 break;
 
             case 3:
